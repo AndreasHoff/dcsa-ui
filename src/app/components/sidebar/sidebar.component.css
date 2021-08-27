@@ -1,0 +1,44 @@
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  background-color: #181828;
+  padding: 2rem;
+}
+
+h1 {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.list-item {
+  color: #fff;
+}
+
+.sub-list {
+  border-color: aquamarine;
+  border-style: solid;
+}
+
+.list {
+  list-style: none;
+}
+
+.sidebar-img {
+  height: 85px;
+  width: 150px;
+}
+
+.btnList {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.btnNewSub {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}

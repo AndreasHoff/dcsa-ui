@@ -4,26 +4,25 @@
     <form action="">
         <input type="text" required placeholder="Callback URL">
         <p>Event type</p>
-        <input class="check" type="checkbox" checked>
-        <input class="check" type="checkbox" checked>
+        <ng-multiselect-dropdown [placeholder]="'Choose event type'" [settings]="dropdownSettingsEventType"
+            [data]="dropdownListEventType" [(ngModel)]="selectedItemsEventType" (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)" [ngModelOptions]="{standalone: true}">
+        </ng-multiselect-dropdown>
         <p>Transport event type code</p>
-        <input type="checkbox" checked>
-        <input type="checkbox" checked>
+        <ng-multiselect-dropdown [placeholder]="'Choose event type codes'" [settings]="dropdownSettingsTransportType"
+            [data]="dropdownListTransportType" [(ngModel)]="selectedItemsTransportType"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)" [ngModelOptions]="{standalone: true}">
+        </ng-multiselect-dropdown>
         <input type="text" required placeholder="Transport Call ID">
         <input type="text" required placeholder="Vessel IMO number">
         <input type="text" required placeholder="Carrier Voyage number">
         <input type="text" required placeholder="Carrier Service code">
         <p>Operations type event code</p>
 
-        <ng-multiselect-dropdown [placeholder]="'Choose operations'" [settings]="dropdownSettings" [data]="dropdownList"
-            [(ngModel)]="selectedItems" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)"
-            [ngModelOptions]="{standalone: true}">
+        <ng-multiselect-dropdown [placeholder]="'Choose operations'" [settings]="dropdownSettingsOperations"
+            [data]="dropdownListOperations" [(ngModel)]="selectedItemsOperations" (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)" [ngModelOptions]="{standalone: true}">
         </ng-multiselect-dropdown>
-
-
-
-        <div class="">
-            <button type="submit" class="btn btnAdd">Submit subscription</button>
-        </div>
+        <button type="submit" class="btn btnAdd">Submit subscription</button>
     </form>
 </div>

@@ -36,6 +36,11 @@ input[type="checkbox"] {
   font-size: 22px;
 }
 
+.subscription-form {
+  text-align: center;
+  overflow-y: scroll;
+}
+
 .btnAdd {
-  margin: 0 auto;
+  margin: 15px 0;
 }

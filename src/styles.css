@@ -10,6 +10,7 @@
   padding: 8px;
   color: #fff;
   border-style: none;
+  border: 1px solid #fff;
 }
 .btn:hover {
   cursor: pointer;
@@ -31,4 +32,9 @@
 
 .multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret::before {
   border-color: #fff transparent !important;
+}
+
+.multiselect-dropdown .dropdown-btn .selected-item {
+  background-color: #009093 !important;
+  border: #009093 !important;
 }

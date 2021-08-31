@@ -1,0 +1,41 @@
+h1 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 22px;
+}
+
+input {
+  margin: 10px 0px;
+}
+
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  margin: 10px 25px 10px 5px;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 22px;
+}
+
+.btnAdd {
+  margin: 0 auto;
+}

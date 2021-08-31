@@ -11,3 +11,24 @@
   color: #fff;
   border-style: none;
 }
+.btn:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
+.multiselect-dropdown .dropdown-btn {
+  color: #fff;
+  font-size: 17px;
+}
+
+.multiselect-dropdown .dropdown-btn .selected-item a {
+  color: #000 !important;
+}
+
+.multiselect-dropdown .dropdown-btn {
+  border: 1px solid ivory !important;
+}
+
+.multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret::before {
+  border-color: #fff transparent !important;
+}

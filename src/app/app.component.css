@@ -1,3 +1,13 @@
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+app-main {
+  padding: 50px;
+  background-color: #181828;
+  height: 800px;
+  border-radius: 20px;
+  grid-column: 3/5;
 }
